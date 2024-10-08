@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header .logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header .tagline {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.tagline a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.section1, .section2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section1 {
+   background-image: url(./Images/rain1.jpeg) ; 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.section1 img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.section1 .text {
+    width: 50%;
+    color: lightpink;
+    
+}
+
+.section2 {
+    background-image: url(./Images/rain1.jpeg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: right;
+}
+
+.section2 img {
+    width: 40%;
+    margin-right: 20px;
+    
+}
+
+.section2 .text {
+    width: 40%;
+    color: lightpink;
+}
+

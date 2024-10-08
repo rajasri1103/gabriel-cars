@@ -32,7 +32,6 @@ body{
 .container .input-box {
     width: 100%;
     height: 50px;
-    /* background-color: salmon; */
     margin: 30px 0;
     position: relative;
 }
@@ -55,7 +54,6 @@ body{
     position: absolute;
     right: 20px;
     top: 18px;
-    /* transform: translateY(-50%); */
     font-size: 20px;
 }
 .container .remember-forgot {
@@ -116,15 +114,78 @@ body{
     }
 }
 
-@media only screen and (min-width:300px) and (max-width:600px) {
-    .container{
-        width: 100%;
-        height: 100vh;
-        
+
+@media only screen and (max-width: 1024px) {
+    /* Tablets and medium-sized devices */
+    .container {
+        width: 80%;  /* Adjust the container width */
+        padding: 20px 30px;  /* Less padding for smaller screens */
     }
-    .nav-box{
-        flex-direction: column;
-        width: 100%;
-        height: 30vh;
+    .container h1 {
+        font-size: 30px; /* Slightly smaller font for headers */
     }
-} 
+    .input-box input {
+        font-size: 14px; /* Adjust input font size */
+        padding: 15px 20px; /* Less padding for input fields */
+    }
+    .container .btn {
+        height: 40px; /* Slightly smaller button */
+        font-size: 14px; /* Adjust button font size */
+    }
+    .remember-forgot {
+        flex-direction: column; /* Stack remember and forgot links vertically */
+        align-items: flex-start; /* Align them to the left */
+    }
+    .register-link p {
+        font-size: 13px; /* Smaller text for the registration link */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Small tablets and larger phones */
+    .container {
+        width: 90%; /* Increase the container width to fill more of the screen */
+        padding: 15px 20px; /* Further reduce padding */
+    }
+    .container h1 {
+        font-size: 25px; /* Further reduce font size */
+    }
+    .input-box input {
+        font-size: 13px; /* Make the input text smaller */
+        padding: 12px 18px; /* Adjust padding to fit the input boxes */
+    }
+    .container .btn {
+        height: 38px; /* Adjust button height */
+        font-size: 13px; /* Smaller button font */
+    }
+    .remember-forgot {
+        font-size: 12px; /* Smaller font for remember/forgot links */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile phones */
+    .container {
+        width: 95%; /* Almost full width of the screen */
+        padding: 10px 15px; /* Minimal padding for mobile */
+    }
+    .container h1 {
+        font-size: 22px; /* Even smaller font size for mobile */
+    }
+    .input-box input {
+        font-size: 12px; /* Smaller input font */
+        padding: 10px 15px; /* Tighten the padding for small screens */
+    }
+    .container .btn {
+        height: 35px; /* Smaller button */
+        font-size: 12px; /* Small button font */
+    }
+    .register-link p {
+        font-size: 12px; /* Smaller font for the registration link */
+    }
+    .remember-forgot {
+        font-size: 11px; /* Smallest font for remember/forgot links */
+        flex-direction: column; /* Stack these links vertically */
+        align-items: flex-start;
+    }
+}
